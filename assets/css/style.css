@@ -1,0 +1,358 @@
+@font-face {
+    font-family: sans-serif;
+    src: url(../fonts/BrandonGrotesque-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: serif;
+    src: url(../fonts/MinionPro-Medium.ttf);
+    font-weight: 500;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: "Brandon Grotesque", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+/* Menu */
+.menu {
+    background-color: #0e1214;
+}
+
+.box {
+    height: 8px;
+
+    background-color: #3bb4bc;
+}
+
+.logo {
+    padding: 22px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__item {
+    padding: 20px 55px;
+    margin-bottom: 2px;
+
+    position: relative;
+    background-color: #191e23;
+}
+
+.menu--item--active {
+    background-color: #3bb4bc;
+}
+
+.menu--item--active .item__title {
+    color: #fff;
+}
+
+.menu__picture {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate3d(0, -50%, 0); 
+}
+
+.item__title {
+    font-size: 14px;
+    color: #535f6b;
+}
+
+.stand-up__item {
+    padding: 15px 0 15px 20px;
+
+    color: #42505a;
+    font-size: 13px;
+    border-bottom: 1px solid #090b0d;
+}
+
+/* Header */
+.header {
+    padding: 13px 48px 13px 26px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__input {
+    padding: 5px 15px;
+    height: 30px;
+    width: 216px;
+
+    border-radius: 15px;
+    border: 2px solid #d4d4d4;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.owner__photo {
+    margin-right: 15px;
+
+    width: 29px;
+    height: 28px;
+}
+
+.owner__name {
+    margin-right: 15px;
+
+    color: #aeaeae;
+}
+
+.bell {
+    margin-right: 15px;
+
+    width: 18px;
+    height: 22px;
+}
+
+.cube {
+    width: 22px;
+    height: 22px;
+}
+
+/* Banner */
+.banner {
+    padding: 25px 0 35px 48px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../images/banner__img.jpg);
+}
+
+.banner__btn {
+    padding: 10px 16px;
+
+    width: 180px;
+    opacity: 70%;
+    color: #fff;
+    background-color: #f63737;
+    border: none;
+}
+
+.banner__play__btn {
+    margin-bottom: 10px;
+
+    display: block;
+}
+
+.banner__title {
+    margin-bottom: 5px;
+
+    color: #fff;
+    font-size: 24px;
+}
+
+.banner__text {
+    font-family: "Minion Pro", sans;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__row {
+    padding: 35px 0 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 725px;
+    width: 100%;
+    border-bottom: 2px solid #e9e9e9;
+}
+
+.content__row:last-child {
+    border-bottom: none;
+}
+
+.content__item__title {
+    font-size: 13px;
+    color: #7a7a7a;
+}
+
+/* Video */
+.video {
+    background-color: #eff7f8;
+}
+
+.reply {
+    padding: 20px 0 20px 12px;
+
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    background-color: #cbe6e6;
+}
+
+.reply__box {
+    position: absolute;
+
+    top: -5px;
+    left: 50%;
+
+    width: 10px;
+    height: 10px;
+
+    transform: rotate(45deg);
+    background-color: #cbe6e6;
+}
+
+.pointer {
+    width: 13px;
+    height: 13px;
+
+    border-top: 3px solid #a0c3c3;
+    border-left: 3px solid #a0c3c3;
+
+    transform: rotate(-45deg);
+}
+
+.reply__text {
+    margin-left: 4px;
+
+    font-size: 13px;
+    color: #5e7777;
+}
+
+.video__inner {
+    padding-top: 30px;
+    margin: auto;
+
+    max-width: 220px;
+    width: 100%;
+}
+
+.video__item {
+    background-color: #fff;
+}
+
+.video__title {
+    padding: 18px 0 16px 12px;
+    font-size: 13px;
+    color: #c0cccc;
+}
+
+.video__img {
+    width: 100%;
+    height: auto;
+}
+
+.subtitle { 
+    font-size: 13px;
+    color: #7d9999;
+}
+
+/* Coments */
+.coments {
+    background-color: #0e1214;
+}
+
+.coment__item {
+    padding: 15px 15px 20px 15px;
+    margin-bottom: 1px;
+
+    background-color: #191e23;
+}
+
+.coment__item:last-child {
+    margin-bottom: none;
+}
+
+.coment__header {
+    margin-bottom: 15px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.coment__author__photo {
+    margin-right: 20px;
+}
+
+.coment__author__name {
+    font-size: 17px;
+    color: #c0cccc;
+    font-weight: 700;
+}
+
+.coment__time {
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    transform: translate3d(0, -50%, 0);
+
+    font-size: 13px;
+    color: #606971;
+    font-weight: 700;
+}
+
+.coment__text {
+    font-family: "Minion Pro", sans;
+    font-size: 15px;
+    color: #a8a9aa;
+    font-weight: 500;
+}
+
+.coment__reply {
+    padding: 15px 15px 0 15px;
+    position: relative;
+}
+
+.coment__reply__box {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+
+    width: 12px;
+    height: 12px;
+
+    transform: rotate(-45deg);
+    background-color: #0e1214;
+}
+
+.coment__reply__title {
+    font-size: 15px;
+    color: #c0cccc;
+    font-weight: 700;
+}
+
+.coment__reply__title__color {
+    color: #3bb4bc;
+}
+
+.coment__reply__text {
+    font-family: "Minion Pro";
+    color: #c7c7c7;
+    font-size: 15px;
+    font-weight: 500;
+}

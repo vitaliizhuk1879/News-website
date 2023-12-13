@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px 800px 250px;
+    grid-template-rows: 62px 342px minmax(636px, 1fr);
+    justify-content: center;
+}
+
+/* Menu */
+.menu {
+    grid-column: span 1;
+    grid-row: 1 / -1;
+}
+
+/* Header */
+.header {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+}
+
+/* Banner */
+.banner {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* Content */
+.content {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+/* Video */
+.video {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
